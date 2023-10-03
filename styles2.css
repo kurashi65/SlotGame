@@ -1,0 +1,66 @@
+/* styles.css */
+
+.slot-container {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.reel {
+    width: 60px;
+    height: 80px;
+    border: 3px solid black; /* 枠を囲む */
+    margin-right: 5px;
+    text-align: center;
+    font-size: 2em; /* 数字を大きくする */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block; /* スロットを横に並べる */
+    margin: 0 10px; /* スロット間の間隔を開ける */
+    margin-bottom: 10px; /* ストップボタンとの間に間隔を開ける */
+}
+
+#slot-machine {
+    text-align: center; /* スロットを中央に配置 */
+}
+
+#score {
+    font-size: 1.5em;
+    border: 5px double gold; /* スコアの周りに豪華な枠をつける */
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 3em; /* スコアのフォントサイズを大きくする */
+}
+#score-value {
+    /* 必要に応じてスコア値だけ更に大きく表示することも可能 */
+    font-size: 3em;
+}
+.stop-button {
+    padding: 10px 20px; /* ボタンを豪華にする */
+    font-size: 1.2em;
+    border: none;
+    background-color: gold;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    display: block; /* ストップボタンをブロック要素にして改行させる */
+}
+
+.stop-button:hover {
+    background-color: darkgoldenrod;
+}
+
+#score, #reset-button {
+    position: fixed; /* 固定ポジションに設定 */
+    bottom: 10%; /* 画面の下から10%の位置に配置 */
+    left: 50%; /* 左から50%の位置に配置（中央寄せ） */
+    transform: translateX(-50%); /* X方向を50%ずらして完全に中央にする */
+    font-size: 3em; /* フォントサイズを大きくする（必要に応じて調整） */
+    margin: 20px 0; /* スコアとリセットボタンの間に間隔を開ける */
+}
+
+#reset-button {
+    font-size: 1em; /* リセットボタンのフォントサイズを調整 */
+}
